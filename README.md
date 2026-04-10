@@ -9,6 +9,9 @@ A webpage that converts USD to another currency.
 * CSS
 * JavaScript
 * Bootstrap
+* Webpack
+* ESLint
+* Babel
 
 ## Description
 
@@ -27,7 +30,9 @@ This webpage takes an amount in USD and converts to one of a small list of other
 9. Create a .env file.
 10. Open your .env file and type API_KEY=YOUR_KEY_HERE.
 11. Replace YOUR_KEY_HERE in the .env file with the API key you copied.
-12. Click on the index file.
+12. In your console, type in and enter npm install
+13. In your console, type in and enter npm run build
+14. In your console, type in and enter npm run start
 
 ## License
 

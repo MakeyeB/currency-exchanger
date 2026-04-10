@@ -4,6 +4,10 @@ import './css/styles.css';
 // Business Logic
 
 function getExchangeRates() {
+  if (!process.env.API_KEY) {
+    printOutput("No API Key provided, please follow the steps in the README.");
+    return;
+  }
   let promise = CurrencyService.getConversionRates();
   promise.then(loadMainFile, function(errorArray) {
     if (errorArray[1] && errorArray[1]["error-type"]) {
